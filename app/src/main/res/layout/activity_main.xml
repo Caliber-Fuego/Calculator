@@ -7,123 +7,198 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/equbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@+id/digit_0"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonmultiply"
+        app:layout_constraintTop_toTopOf="@+id/digit_0" />
+
+    <Button
         android:id="@+id/buttonadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:text="+"
-        app:layout_constraintEnd_toStartOf="@+id/buttonsubtract"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonmultiply"
+        app:layout_constraintTop_toTopOf="@+id/digit_3" />
+
+    <Button
+        android:id="@+id/digit_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSecondVar" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberFirstVar" />
+
+    <Button
+        android:id="@+id/digit_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/digit_7"
+        app:layout_constraintTop_toTopOf="@+id/digit_7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/digit_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_7"
+        app:layout_constraintStart_toEndOf="@+id/digit_8"
+        app:layout_constraintTop_toTopOf="@+id/digit_7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/digit_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="4"
+        app:layout_constraintEnd_toEndOf="@+id/digit_7"
+        app:layout_constraintStart_toStartOf="@+id/digit_7"
+        app:layout_constraintTop_toBottomOf="@+id/digit_7" />
+
+    <Button
+        android:id="@+id/digit_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_4"
+        app:layout_constraintEnd_toEndOf="@+id/digit_8"
+        app:layout_constraintStart_toStartOf="@+id/digit_8"
+        app:layout_constraintTop_toTopOf="@+id/digit_4" />
+
+    <Button
+        android:id="@+id/digit_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_4"
+        app:layout_constraintEnd_toEndOf="@+id/digit_9"
+        app:layout_constraintStart_toStartOf="@+id/digit_9"
+        app:layout_constraintTop_toTopOf="@+id/digit_4" />
+
+    <Button
+        android:id="@+id/digit_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="@+id/digit_4"
+        app:layout_constraintStart_toStartOf="@+id/digit_4"
+        app:layout_constraintTop_toBottomOf="@+id/digit_4" />
+
+    <Button
+        android:id="@+id/digit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_1"
+        app:layout_constraintEnd_toEndOf="@+id/digit_8"
+        app:layout_constraintStart_toStartOf="@+id/digit_8"
+        app:layout_constraintTop_toTopOf="@+id/digit_1" />
+
+    <Button
+        android:id="@+id/digit_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/digit_1"
+        app:layout_constraintEnd_toEndOf="@+id/digit_9"
+        app:layout_constraintStart_toStartOf="@+id/digit_9"
+        app:layout_constraintTop_toTopOf="@+id/digit_1" />
+
+    <Button
+        android:id="@+id/digit_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/digit_8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/digit_8"
+        app:layout_constraintTop_toBottomOf="@+id/digit_2" />
 
     <Button
         android:id="@+id/buttonsubtract"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
-        app:layout_constraintEnd_toStartOf="@+id/buttonmultiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonadd"
-        app:layout_constraintTop_toTopOf="@+id/buttonadd" />
+        app:layout_constraintBottom_toBottomOf="@+id/digit_6"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonmultiply"
+        app:layout_constraintTop_toTopOf="@+id/digit_6" />
 
     <Button
         android:id="@+id/buttonmultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/buttondivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonsubtract"
-        app:layout_constraintTop_toTopOf="@+id/buttonsubtract" />
+        app:layout_constraintBottom_toBottomOf="@+id/digit_7"
+        app:layout_constraintStart_toEndOf="@+id/digit_9"
+        app:layout_constraintTop_toTopOf="@+id/digit_7"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttondivide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="/"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonmultiply"
-        app:layout_constraintTop_toTopOf="@+id/buttonmultiply" />
+        app:layout_constraintBottom_toBottomOf="@+id/buttondivide2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonmultiply"
+        app:layout_constraintStart_toStartOf="@+id/buttonmultiply"
+        app:layout_constraintTop_toTopOf="@+id/buttondivide2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttondivide2"
-        android:layout_width="118dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="24dp"
-        android:text="%"
-        app:layout_constraintEnd_toEndOf="@+id/buttondivide"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/buttonadd"
-        app:layout_constraintTop_toBottomOf="@+id/buttonadd" />
-
-    <EditText
-        android:id="@+id/editTextNumberSecondVar"
-        android:layout_width="336dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="216dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="0.0"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="First Variable"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberFirstVar" />
+        android:layout_marginTop="280dp"
+        android:text="%"
+        app:layout_constraintEnd_toEndOf="@+id/digit_9"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="@+id/digit_9"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextNumberFirstVar"
         android:layout_width="326dp"
         android:layout_height="61dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginBottom="500dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="0.0"
+        android:text="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Second Variable
-"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberFirstVar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberFirstVar" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
-        android:text="Result:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textAnswer"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textAnswer"
+    <Button
+        android:id="@+id/clearbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Answer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="@+id/buttondivide2"
+        app:layout_constraintEnd_toEndOf="@+id/digit_7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/digit_7"
+        app:layout_constraintTop_toTopOf="@+id/buttondivide2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
